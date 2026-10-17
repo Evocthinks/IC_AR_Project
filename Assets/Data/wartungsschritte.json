@@ -1,0 +1,53 @@
+{
+  "name": "Filtertausch Schaltschranklüfter",
+  "steps": [
+    {
+      "id": "S1",
+      "title": "Ausgangszustand prüfen",
+      "text": "Messwerte ansehen. Ist der Differenzdruck am Filter rot, ist die Filtermatte zugesetzt und muss getauscht werden.",
+      "part": "anzeige",
+      "fanOff": false,
+      "replacesFilter": false
+    },
+    {
+      "id": "S2",
+      "title": "Anlage freischalten",
+      "text": "Hauptschalter ausschalten und gegen Wiedereinschalten sichern. Erst weiterarbeiten, wenn die Spannungsfreiheit festgestellt ist.",
+      "part": "hauptschalter",
+      "fanOff": true,
+      "replacesFilter": false
+    },
+    {
+      "id": "S3",
+      "title": "Lüftergitter abnehmen",
+      "text": "Die Rasthaken des Lüftergitters lösen und das Gitter nach vorne abziehen.",
+      "part": "gitter",
+      "fanOff": true,
+      "replacesFilter": false
+    },
+    {
+      "id": "S4",
+      "title": "Filtermatte tauschen",
+      "text": "Alte Filtermatte entnehmen und eine neue Matte gleicher Größe einlegen. Auf die Luftrichtung achten.",
+      "part": "filter",
+      "fanOff": true,
+      "replacesFilter": true
+    },
+    {
+      "id": "S5",
+      "title": "Lüftergitter montieren",
+      "text": "Gitter wieder aufsetzen, bis alle Rasthaken eingerastet sind.",
+      "part": "gitter",
+      "fanOff": true,
+      "replacesFilter": false
+    },
+    {
+      "id": "S6",
+      "title": "Funktion prüfen",
+      "text": "Anlage wieder einschalten. Der Lüfter muss anlaufen und der Differenzdruck im grünen Bereich liegen.",
+      "part": "anzeige",
+      "fanOff": false,
+      "replacesFilter": false
+    }
+  ]
+}
